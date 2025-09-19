@@ -1,0 +1,28 @@
+{
+	"name": "IBM DB2 Vectors",
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	//"image": "mcr.microsoft.com/devcontainers/base:bookworm",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "devcontainer",
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+	
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	//"forwardPorts": [3000, 3010, 4001, 4025, 4321, 4322],
+
+	// Use 'postCreateCommand' to run commands after thecontainer is created.
+	"postCreateCommand": "scripts/setup.sh",
+  
+	"remoteEnv": {
+    "PODMAN_USERNS": "keep-id"
+  },
+  
+	"containerUser": "vscode",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-toolsai.jupyter",
+				"IBM.db2connect"
+			]
+		}
+	}
+}
