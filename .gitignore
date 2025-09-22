@@ -4,3 +4,4 @@
 **/__pycache__
 *.code-workspace
 *.pickle
+db2_client/
