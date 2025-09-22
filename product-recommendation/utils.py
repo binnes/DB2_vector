@@ -115,6 +115,26 @@ def get_distance_for_sku_list_sql(sku_sql_in):
     
 # shoe_ddl.py
 
+def get_create_sq_shoes_table_sql_no_embedding():
+    return """
+    CREATE TABLE SQ_SHOES (
+        SKU VARCHAR(8),
+        PRODUCT_NAME VARCHAR(23),
+        BRAND VARCHAR(9),
+        CLASS VARCHAR(5),
+        TYPE VARCHAR(7),
+        MATERIAL VARCHAR(9),
+        COLOR VARCHAR(5),
+        WEATHER_RESISTANCE VARCHAR(10),
+        ARCH_SUPPORT VARCHAR(4),
+        SIZE FLOAT,
+        PRICE FLOAT,
+        RATING FLOAT,
+        STORE_ID BIGINT,
+        CITY VARCHAR(7)
+    );
+    """
+
 def get_create_sq_shoes_table_sql():
     return """
     CREATE TABLE SQ_SHOES (
