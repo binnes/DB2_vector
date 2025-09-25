@@ -8,3 +8,4 @@ matplotlib==3.10.6
 ibm_db==3.2.7
 scikit-learn==1.7.2
 multiprocess==0.70.18
+faker==37.8.0
