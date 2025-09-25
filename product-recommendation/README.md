@@ -122,6 +122,7 @@ uv pip install -r requirements.txt
 ```env
 WATSONX_PROJECT=
 WATSONX_APIKEY=
+WATSONX_URL=
 
 database=
 hostname=
